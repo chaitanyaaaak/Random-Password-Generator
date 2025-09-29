@@ -14,7 +14,31 @@
         </h1>
         <p class="subtitle">Never use an insecure password again.</p>
 
+        <!-- options section -->
+        <section class="options-container">
+            <div class="options-length">
+                <label for="length">Password Length:</label>
+                <input type="range" id="length" name="length" min="8" max="32" value="16">
+                <span id="length-value">16</span>
+            </div>
+            <div class="option-checkboxes">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <label for="include-numbers">Include Numbers (0-9)</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="include-symbols" checked>
+                    <label for="include-symbols">Include Symbols (!-$^+)</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generate passwords button -->
+        <button id="generate-btn" class="generate-btn">Generate passwords</button>
+        <hr>
+
         
+
     </main>
 </body>
 </html>
