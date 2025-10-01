@@ -9,3 +9,12 @@ const copyBtns = document.querySelectorAll('.copy-btn');
 const strengthText = document.getElementById('strength-text');
 const strengthBars = document.querySelectorAll('.strength-bar');
 
+// character sets
+
+const CHARSETS = {
+    LOWERCASE: 'abcdefghijklmnopqrstuvwxyz', 
+    UPPERCASE: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    NUMBERS: '0123456789',
+    SYMBOLS: '~`!@#$%^&*()_-+={[}]|:;"<,>.?/',
+}
+
