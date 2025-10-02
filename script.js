@@ -77,6 +77,7 @@ async function copyToClipboard(elementId, btn) {
 
     try {
         await navigator.clipboard.writeText(input.value);
+        alert('Password copied to clipboard!');
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
