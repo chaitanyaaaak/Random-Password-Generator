@@ -15,7 +15,7 @@ const CHARSETS = {
     LOWERCASE: 'abcdefghijklmnopqrstuvwxyz', 
     UPPERCASE: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     NUMBERS: '0123456789',
-    SYMBOLS: '~`!@#$%^&*()_-+={[}]|:;"<,>.?/',
+    SYMBOLS: '~!@#$%&_{[}]|<>?/',
 }
 
 // Events 
@@ -116,5 +116,16 @@ function updateStrengthIndicator(password) {
         barsToShow = 4;
     }
 
-     
+    // Update strength text
+
+    strengthText.textContent = levelText;
+    strengthBars.forEach((bar, index) => {
+        if (index < barsToShow) {
+            bar.style.backgroundColor = levelColor;
+        } else {
+            bar.style.backgroundColor = 'var(--bg-darkest)';
+        }
+    });
 }
+
+renderPasswords();
