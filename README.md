@@ -35,4 +35,4 @@ Check out the live version of the password generator here:
 
 Feel free to connect with me on LinkedIn:  
 
-[LinkedIn: Chaitanya keshniya](www.linkedin.com/in/chaitanyakeshniya)
+[LinkedIn: Chaitanya](www.linkedin.com/in/chaitanyakeshniya)
