@@ -31,8 +31,3 @@ Check out the live version of the password generator here:
 
 ---
 
-## 🔗 Connect with Me
-
-Feel free to connect with me on LinkedIn:  
-
-[LinkedIn: Chaitanya](www.linkedin.com/in/chaitanyakeshniya)
