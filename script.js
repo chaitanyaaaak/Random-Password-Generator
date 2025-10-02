@@ -81,3 +81,40 @@ async function copyToClipboard(elementId, btn) {
         console.error('Failed to copy: ', err);
     }
 }
+
+// strength indicator function
+
+function updateStrengthIndicator(password) {
+
+    let strength = 0;
+    if (password.length >= 8) strength++;
+    if (password.length >= 16) strength++;
+    if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+    if (/\d/.test(password)) strength++;
+    if (/[^A-Za-z0-9]/.test(password)) strength++;
+
+    let levelText = '';
+    let levelColor = '';
+    let barsToShow = 0;
+
+    if (strength <= 1) {
+        levelText = 'Weak';
+        levelColor = 'red';
+        barsToShow = 1;
+
+    }   else if (strength === 2) {
+            levelText = 'Medium';
+            levelColor = '#f59e0b';
+            barsToShow = 2;
+    } else if (strength === 3) {
+            levelText = 'Strong';
+            levelColor = '#84cc16';
+            barsToShow = 3;
+    } else {
+        levelText = 'Very Strong';
+        levelColor = 'var(--text-green)';
+        barsToShow = 4;
+    }
+
+     
+}
